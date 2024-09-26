@@ -89,7 +89,7 @@ namespace ServerCore
                 foreach (ArraySegment<byte> sendBuff in sendBuffList)
                     _sendQueue.Enqueue(sendBuff);
 
-                if (_pendingList.Count == 0) //내가 1빠다!
+                if (_pendingList.Count == 0) 
                     RegisterSend();
             }
         }
@@ -99,7 +99,7 @@ namespace ServerCore
             lock (_lock)
             {
                 _sendQueue.Enqueue(sendBuff);
-                if (_pendingList.Count == 0) //내가 1빠다!
+                if (_pendingList.Count == 0) 
                     RegisterSend();
             }
         }

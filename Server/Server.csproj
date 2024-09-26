@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CS_NetworkFramework\CS_NetworkFramework.csproj" />
+  </ItemGroup>
+
 </Project>
